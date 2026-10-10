@@ -1,0 +1,91 @@
+/* ═══════════════════════════════════════════════════════════
+   COLLEGE RMS — MOBILE RESPONSIVENESS
+   ═══════════════════════════════════════════════════════════ */
+
+/* Mobile Toggle Button (Visible only on small screens) */
+.mobile-toggle {
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    z-index: 1060;
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 12px;
+    font-size: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    cursor: pointer;
+}
+
+/* Overlay for mobile sidebar */
+.sidebar-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1040;
+}
+.sidebar-overlay.active {
+    display: block;
+}
+
+@media (max-width: 991.98px) {
+    /* Show hamburger menu */
+    .mobile-toggle {
+        display: block;
+    }
+    
+    /* Adjust sidebar for mobile */
+    .sidebar {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        z-index: 1050;
+        box-shadow: 4px 0 15px rgba(0,0,0,0.1);
+    }
+    .sidebar.show {
+        transform: translateX(0);
+    }
+    
+    /* Adjust main content area */
+    .main-content {
+        margin-left: 0 !important;
+        padding: 65px 15px 20px 15px !important; /* Extra top padding for toggle button */
+        width: 100% !important;
+    }
+
+    /* Header text adjustments */
+    .main-content h3 {
+        font-size: 1.5rem;
+    }
+
+    /* Table responsiveness */
+    .table-responsive {
+        border: 0;
+    }
+    
+    /* Search bar width adjustment */
+    .input-group {
+        width: 100%;
+    }
+}
+
+/* Extra small devices */
+@media (max-width: 575.98px) {
+    .stat-card, .card-box {
+        padding: 15px !important;
+    }
+    .main-content {
+        padding-top: 75px !important;
+    }
+    /* Fix dashboard header stacking */
+    .d-flex.justify-content-between.align-items-center.mb-4 {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 15px !important;
+    }
+    .d-flex.justify-content-between.align-items-center.mb-4 .dropdown {
+        align-self: flex-start;
+    }
+}

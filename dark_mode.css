@@ -1,0 +1,84 @@
+/* ═══════════════════════════════════════════════════════════
+   COLLEGE RMS — LIGHT MODE TEXT & COLOR FIX (All Pages)
+   ═══════════════════════════════════════════════════════════ */
+
+/* ── Base ── */
+body { background-color: #f0f3f8 !important; color: #1e293b !important; }
+
+/* ── White cards/surfaces → dark text ── */
+.card, .card-box, .stat-card {
+    background: #ffffff !important;
+    color: #1e293b !important;
+}
+
+/* ── Headings ── */
+h1,h2,h3,h4,h5,h6 { color: #0f172a !important; }
+.fw-bold, .fw-semibold { color: #0f172a !important; }
+
+/* ── Tables ── */
+.table { color: #1e293b !important; }
+.table thead th { color: #374151 !important; font-weight: 600; }
+.table tbody td { color: #1e293b !important; }
+.table-light, .table-light th { background: #f8fafc !important; color: #374151 !important; }
+
+/* ── Form labels and inputs ── */
+.form-label { color: #374151 !important; font-weight: 500; }
+.form-control, .form-select, textarea {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    border-color: #d1d5db !important;
+}
+.form-control::placeholder, textarea::placeholder { color: #9ca3af !important; }
+
+/* ── Dropdowns ── */
+.dropdown-menu { background: #ffffff !important; }
+.dropdown-item { color: #1e293b !important; }
+.dropdown-item:hover { background: #f1f5f9 !important; color: #0f172a !important; }
+.dropdown-menu .fw-semibold { color: #111827 !important; }
+.dropdown-menu .text-dark   { color: #111827 !important; }
+.dropdown-menu .text-muted  { color: #6b7280 !important; }
+
+/* ── Buttons ── */
+.btn-light { color: #1e293b !important; background: #f1f5f9 !important; }
+.btn-outline-secondary { color: #374151 !important; border-color: #9ca3af !important; }
+
+/* ── Alerts ── */
+.alert-danger  { color: #991b1b !important; background: #fef2f2 !important; border-color: #fecaca !important; }
+.alert-success { color: #065f46 !important; background: #f0fdf4 !important; border-color: #a7f3d0 !important; }
+.alert-info    { color: #1e40af !important; background: #eff6ff !important; border-color: #bfdbfe !important; }
+
+/* ── DataTables ── */
+.dataTables_wrapper { color: #1e293b !important; }
+.dataTables_info,
+.dataTables_filter label,
+.dataTables_length label { color: #6b7280 !important; }
+.dataTables_filter input, .dataTables_length select {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    border: 1px solid #d1d5db !important;
+    border-radius: 6px;
+    padding: 4px 8px;
+}
+.page-link { background: #ffffff !important; color: #374151 !important; border-color: #d1d5db !important; }
+.page-item.active .page-link { background: #4f46e5 !important; color: #ffffff !important; border-color: #4f46e5 !important; }
+.page-item.disabled .page-link { color: #9ca3af !important; }
+
+/* ── Modals ── */
+.modal-content { background: #ffffff !important; color: #1e293b !important; }
+.modal-header, .modal-footer { border-color: #e5e7eb !important; }
+.modal-title { color: #0f172a !important; }
+
+/* ── Badges ── */
+.badge.bg-warning.text-dark { color: #92400e !important; }
+.badge.bg-success           { color: #ffffff !important; }
+.badge.bg-danger            { color: #ffffff !important; }
+.badge.bg-info.text-dark    { color: #1e40af !important; }
+.badge.bg-secondary         { color: #ffffff !important; }
+
+/* ── Stat card ── */
+.stat-card .text-muted { color: #6b7280 !important; }
+.stat-card h2          { color: #0f172a !important; }
+
+/* ── Back button ── */
+.back-btn { color: #374151 !important; }
+.back-btn:hover { color: #0f172a !important; }
